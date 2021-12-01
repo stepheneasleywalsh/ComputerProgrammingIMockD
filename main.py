@@ -30,28 +30,37 @@ while True:
 
     # Check who wins the round
     if choice == "R" and computerchoice == "R":
+        print("Computer picked R")
         print("Draw")
     elif choice == "R" and computerchoice == "P":
+        print("Computer picked P")
         print("Computer Wins")
         computerscore += 1
     elif choice == "R" and computerchoice == "S":
+        print("Computer picked S")
         print("You Win")
         score += 1
     elif choice == "P" and computerchoice == "R":
+        print("Computer picked R")
         print("You Win")
         score += 1
     elif choice == "P" and computerchoice == "P":
+        print("Computer picked P")
         print("Draw")
     elif choice == "P" and computerchoice == "S":
+        print("Computer picked S")
         print("Computer Wins")
         computerscore += 1
     elif choice == "S" and computerchoice == "R":
+        print("Computer picked R")
         print("Computer Wins")
         computerscore += 1
     elif choice == "S" and computerchoice == "P":
+        print("Computer picked P")
         print("You Win")
         score += 1
     elif choice == "S" and computerchoice == "S":
+        print("Computer picked S")
         print("Draw")
 
 # Quit
