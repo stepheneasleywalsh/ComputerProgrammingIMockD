@@ -6,6 +6,7 @@ import random
 # Scores start with 0
 score = 0
 computerscore = 0
+round = 1
 
 while True:
     # Check that the game is not over
@@ -19,7 +20,14 @@ while True:
         print(" # # # Your Score is", score, " | Computer's Score is ", computerscore, " # # #")
 
     # Play the game
+    print("ROUND:", round)
+    round += 1
+
+    # User choice
     choice = input("Please select R, P or S: ")
+    choice = choice.upper()
+
+    # Computer's Choice
     r = random.randint(1,3)
     if r == 1:
         computerchoice = "R"
